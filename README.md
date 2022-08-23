@@ -5,9 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Calculadora </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .fundo{
+            background-image: linear-gradient(45deg, black, purple);
+            height: 100vh;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .calculadora{
+            position: absolute;
+            background-color: black;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 50%);
+            border-radius: 15px;
+            padding: 15px;
+        }
+    
+    </style>
 </head>
 <body>
-   <div class="calculadora"></div>
+    <div class="fundo">
+   <div class="calculadora">
    <h1>Calculadora</h1>
    <p id="resultado"></p>
    <table>
@@ -39,6 +62,7 @@
       <td><button>.</button></td>
     </tr>
    </table>
+</div>
 
   
 </body>
